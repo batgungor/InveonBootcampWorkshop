@@ -13,5 +13,6 @@ namespace Bootcamp.Workshop.Business.Engines.Interfaces
         List<ProductModel> GetProductList();
         List<ProductModel> GetProductList(ProductListRequestModel model);
         List<CategoryModel> GetCategoryList();
+        double Sum(double a, double b);
     }
 }

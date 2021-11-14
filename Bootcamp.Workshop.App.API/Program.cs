@@ -25,7 +25,7 @@ namespace Bootcamp.Workshop.App.API
                 /*
                 dbContext.Database.EnsureDeleted(); //delete DB
                 */
-                dbContext.Database.Migrate(); //auto migration
+                //dbContext.Database.Migrate(); //auto migration
                 ServiceInitializer.SeedData(dbContext);
                 dbContext.Dispose();
             }

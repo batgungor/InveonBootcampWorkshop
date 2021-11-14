@@ -65,5 +65,10 @@ namespace Bootcamp.Workshop.Business.Engines.Implementations
             var productModels = products.Select(p => _mapper.Map<ProductModel>(p)).ToList();
             return productModels;
         }
+
+        public double Sum(double a, double b)
+        {
+            return a + b;
+        }
     }
 }

@@ -33,6 +33,10 @@ namespace Bootcamp.Workshop.App.API
             services.AddCors(options =>
              options.AddDefaultPolicy(builder =>
              builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+
+            var apiInfo = Configuration.GetSection("ApiInfo"); // singleton
+            //rabbitMQ beya background servisler -> scoped
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

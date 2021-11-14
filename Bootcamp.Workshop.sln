@@ -5,17 +5,21 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{7EBED68E-7468-4DDF-A0D7-B6C13975CB9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Workshop.App.API", "Bootcamp.Workshop.App.API\Bootcamp.Workshop.App.API.csproj", "{A17AC150-0F6C-4868-BF68-B2347BEEBFAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Workshop.App.API", "Bootcamp.Workshop.App.API\Bootcamp.Workshop.App.API.csproj", "{A17AC150-0F6C-4868-BF68-B2347BEEBFAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{B0E3FE50-C20B-42B7-9CE9-1A9CDD012383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Workshop.Business.Engines", "Bootcamp.Workshop.Business.Engines\Bootcamp.Workshop.Business.Engines.csproj", "{0B96D6C0-480D-4E0C-BA42-A015A3840174}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Workshop.Business.Engines", "Bootcamp.Workshop.Business.Engines\Bootcamp.Workshop.Business.Engines.csproj", "{0B96D6C0-480D-4E0C-BA42-A015A3840174}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2309752C-B4A6-4B73-9AA0-DE1DB89162BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Workshop.Data.DAL", "Bootcamp.Workshop.Data.DAL\Bootcamp.Workshop.Data.DAL.csproj", "{1387AF61-FD81-44CC-8C03-0E86CB334481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Workshop.Data.DAL", "Bootcamp.Workshop.Data.DAL\Bootcamp.Workshop.Data.DAL.csproj", "{1387AF61-FD81-44CC-8C03-0E86CB334481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Workshop.Data.Entities", "Bootcamp.Workshop.Data.Entities\Bootcamp.Workshop.Data.Entities.csproj", "{A0743FF9-D0B9-4587-BC60-82F2650D3357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Workshop.Data.Entities", "Bootcamp.Workshop.Data.Entities\Bootcamp.Workshop.Data.Entities.csproj", "{A0743FF9-D0B9-4587-BC60-82F2650D3357}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C551FCA8-3DB6-4EF5-B431-F41596410F67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Workshop.Test.UnitTest", "Bootcamp.Workshop.Test.UnitTest\Bootcamp.Workshop.Test.UnitTest.csproj", "{BAE4F9B8-AC4E-4943-9980-6CDFE9014BB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{A0743FF9-D0B9-4587-BC60-82F2650D3357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0743FF9-D0B9-4587-BC60-82F2650D3357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0743FF9-D0B9-4587-BC60-82F2650D3357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE4F9B8-AC4E-4943-9980-6CDFE9014BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE4F9B8-AC4E-4943-9980-6CDFE9014BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE4F9B8-AC4E-4943-9980-6CDFE9014BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE4F9B8-AC4E-4943-9980-6CDFE9014BB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{0B96D6C0-480D-4E0C-BA42-A015A3840174} = {B0E3FE50-C20B-42B7-9CE9-1A9CDD012383}
 		{1387AF61-FD81-44CC-8C03-0E86CB334481} = {2309752C-B4A6-4B73-9AA0-DE1DB89162BC}
 		{A0743FF9-D0B9-4587-BC60-82F2650D3357} = {2309752C-B4A6-4B73-9AA0-DE1DB89162BC}
+		{BAE4F9B8-AC4E-4943-9980-6CDFE9014BB8} = {C551FCA8-3DB6-4EF5-B431-F41596410F67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {082B8C0C-7DAB-4ECD-BFEE-37F9E9E84630}

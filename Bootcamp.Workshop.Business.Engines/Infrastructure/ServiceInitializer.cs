@@ -16,9 +16,12 @@ namespace Bootcamp.Workshop.Business.Engines.Infrastructure
         public static void AddEngineLayer(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("ConnStr");
-            services.AddDbContext<EFContext>(opt => opt.UseSqlServer(connectionString));
+            //services.AddDbContext<EFContext>(opt => opt.UseSqlServer(connectionString)); //sqlserver kullanıcıları
+            //services.AddDbContext<EFContext>(opt => opt.UseInMemoryDatabase("TestDb")); //inmemory kullanıcıları
             services.AddTransient<ICatalogEngine, CatalogEngine>();
             services.AddAutoMapper(typeof(AutoMapperConfig));
+
+            services.AddTransient<IBardak, SuBardak>();
         }
 
         public static void SeedData(EFContext context)

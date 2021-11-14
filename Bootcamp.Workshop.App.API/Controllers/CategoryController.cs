@@ -2,6 +2,7 @@
 using Bootcamp.Workshop.Business.Engines.Interfaces;
 using Bootcamp.Workshop.Business.Engines.Models;
 using Bootcamp.Workshop.Business.Engines.Models.RequestModels;
+using Bootcamp.Workshop.Data.DAL;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,13 +16,18 @@ namespace Bootcamp.Workshop.App.API.Controllers
     public class CategoryController : Controller
     {
         private readonly ICatalogEngine _catalogEngine;
-        public CategoryController(ICatalogEngine catalogEngine)
+        private readonly IBardak _bardak;
+        public CategoryController(
+            ICatalogEngine catalogEngine,
+            IBardak bardak)
         {
             _catalogEngine = catalogEngine;
+            _bardak = bardak;
         }
         [HttpGet]
         public List<CategoryModel> Get()
         {
+            var result = _bardak.Drink();
             var data = _catalogEngine.GetCategoryList();
             return data;
         }
